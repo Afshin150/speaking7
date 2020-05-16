@@ -1,6 +1,6 @@
 How to use:
 ----------
-log in speaking7.com, Press F12 key on the keyboard, copy this code on the Console Tab, change Inputs in code then press Enter.
+log in speaking7.com > Press F12 key on the keyboard > copy this code on the Console Tab > change Inputs in code then press Enter.
 
 It's done. 🙂
 
