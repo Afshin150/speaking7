@@ -1,0 +1,28 @@
+//--- version 1.0---- its a basic version filtering now, in the future it will be more advance :)
+//------------------------------- INPUTs: ----------------------------------------------
+var filterWord = ["AnnaOneLov","Emilly","add_here..."]; // parts of name to be blocked (you can add another name with this type).
+var digitAllow = 2; // allow digit number in a name.
+var filterByText=0; // (0, 1) => (0 == no, 1 == yes) if set 1, when filterWord find in the text it will be act.
+
+var delayN=1; // excute spead (1000 == to 1 secound).
+//-------------------------------------------------------------------------------------
+if (filterByText==0){var Afshinn=["nick","name"];}else{var Afshinn=["nick","name","text"];}
+setInterval(function(){ 
+for (A=0;A<=Afshinn.length-1;A++){
+var targetDiv = document.querySelectorAll('.'+Afshinn[A]);
+for(var i=0; i<targetDiv.length;i++){
+str=targetDiv[i].textContent;
+matches = str.match(/\d+/g); 
+if (matches){
+    numDigit=matches.join("").length;
+    if(numDigit>digitAllow){
+    targetDiv[i].parentElement.remove();
+    break;
+    }
+}
+for (B=0;B<=filterWord.length-1;B++){
+  if((targetDiv[i].textContent).search(filterWord[B]) != -1){
+     targetDiv[i].parentElement.remove();
+  }
+}}}}, delayN);
+//-------------------------------------------------------------------------------------
