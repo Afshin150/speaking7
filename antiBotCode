@@ -1,10 +1,11 @@
 //------------------------------- INPUTs: ----------------------------------------------
-var userForceBlock = ["AnnaOneLov","Emilly","add_here"]; // parts of name to be blocked (you can add another name with this type)
-var digitAllow = 2; // allow digit number in a name
+var filterWord = ["AnnaOneLov","Emilly","add_here"]; // parts of name to be blocked (you can add another name with this type).
+var digitAllow = 2; // allow digit number in a name.
+var filterByText=0; // (0, 1) => (0 == no, 1 == yes) if set 1, when filterWord find in text it will act.
 
-var delayN=1; // excute spead (1000 == to 1 secound)
+var delayN=1; // excute spead (1000 == to 1 secound).
 //-------------------------------------------------------------------------------------
-var Afshinn=["nick","name"];
+if (filterByText==0){var Afshinn=["nick","name"];}else{var Afshinn=["nick","name","text"];}
 setInterval(function(){ 
 for (A=0;A<=Afshinn.length-1;A++){
 var targetDiv = document.querySelectorAll('.'+Afshinn[A]);
