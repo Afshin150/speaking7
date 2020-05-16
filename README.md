@@ -8,6 +8,16 @@ If you refresh the browser you have to repeat copying this code on the console a
 
 do like bellow pic:
 
-1) https://prnt.sc/shz986
+copy code:
+
+1) https://prnt.sc/shzgpp
+
+past code:
+
 2) https://prnt.sc/shz986
+
+press Enter:
+
 3) https://prnt.sc/shzajn
+
+
